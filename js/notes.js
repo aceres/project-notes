@@ -18,7 +18,7 @@ var Notes = (function () {
         var noteToUpdate = findNote(getNoteKeyParameter());
 
         // new note
-        if (typeof noteToUpdate.created == 'undefined') { // no existing note found, create a new note
+        if (typeof noteToUpdate.created === 'undefined') { // no existing note found, create a new note
             addNewNote();
         } else {
 
