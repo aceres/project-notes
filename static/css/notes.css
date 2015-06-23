@@ -1,7 +1,9 @@
-/* global styles for display and editor */
+/* *****************
+   Global Style
+   ***************** */
 
 body {
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 14px;
 }
 
@@ -18,24 +20,15 @@ body {
     min-height: 35px;
 }
 
-
-/* styles for actions */
-
 .row.filter {
     float: left;
 }
 
-.row.sorting {
-
-}
-
-.sorting button:hover, .sorting button.active {
+.sorting button:hover,
+.sorting button.active {
     background: #a9a9a9;
     text-decoration: none;
 }
-
-
-/* styles for displaying note entries */
 
 li.entry {
     -webkit-padding-start: 0px;
@@ -47,30 +40,33 @@ li.entry {
     clear: both;
 }
 
-.entry input {
+.entry input,
+.entry label,
+.entry .date,
+.entry .title,
+.entry .priority,
+.entry .description,
+.entry .edit {
     float: left;
 }
 
 .entry label {
     width: 180px;
-    float: left;
 }
 
 .entry .date {
     width: 200px;
-    float: left;
 }
 
 .entry .title {
     font-weight: bold;
     width: 400px;
-    float: left;
- }
+}
 
-.entry .priority {
+.entry .priority,
+.entry .edit {
     width: 200px;
     text-align: right;
-    float: left;
 }
 
 .entry .status {
@@ -81,16 +77,6 @@ li.entry {
 .entry .description {
     width: 400px;
     padding-bottom: 40px;
-    float: left;
-}
-
-.entry .edit {
-    width: 200px;
-    text-align: right;
-    float: left;
-}
-
-div.description {
     max-height: 50px;
 }
 
@@ -98,20 +84,21 @@ a.less {
     display: none;
 }
 
-/* style for the note editor page */
-
 .edit .row {
     clear: both;
+}
+
+.edit label,
+.edit input.radio {
+    float: left;
 }
 
 .edit label {
     display: block;
     width: 150px;
-    float: left;
 }
 
 .edit input.radio {
-    float: left;
     margin-right: 6px;
 }
 
@@ -121,6 +108,6 @@ a.less {
     text-align: left;
 }
 
-.edit input.text {
+.edit input[type="text"].text {
     width: 200px;
 }
